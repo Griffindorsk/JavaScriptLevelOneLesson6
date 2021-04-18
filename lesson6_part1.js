@@ -56,46 +56,7 @@ function catalogueFulfillment(numberOfProducts) {
             'размер': sizesAvailable[Math.floor(Math.random() * (sizesAvailable.length))],
             'цвет': colorsAvailable[Math.floor(Math.random() * (colorsAvailable.length))],
             'цена': basicPriceRange[0] + Math.floor(Math.random() * (basicPriceRange[1] - basicPriceRange[0] + Number(1))),
-            'закупка': purchasingPriceRange[0] + Math.floor(Math.random() * (purchasingPriceRange[1] - purchasingPriceRange[0] + Number(1))),
-            // finalPrice: function (discount) {
-            //     // проверяем в каком формате пришло значение скидки и если все Ok, то возвращаем цену с учетом скидки
-            //     var lastSymbol = discount.charAt(discount.length - 1);
-            //     if (lastSymbol == '%') {
-            //         // если скидка задана со знаком %, то удаляем этот знак
-            //         discount = discount.slice(0, (discount.length - 1));
-            //         // задаем индикатор для формата скидки
-            //         var percentage = true;
-            //     }
-            //     else {
-            //         var percentage = false;
-            //     }
-            //     if (!isNaN(discount)) {
-            //         if (Number(discount) >= 0) {
-            //             if (percentage) {
-            //                 if (discount <= 100) {
-            //                     return this.basicConsumerPrice * (100 - discount) / 100;
-            //                 }
-            //                 else {
-            //                     alert('скидка не может быть больше 100%!');
-            //                 }
-            //             }
-            //             else {
-            //                 if (discount <= 1) {
-            //                     return this.basicConsumerPrice * (1 - discount);
-            //                 }
-            //                 else {
-            //                     alert('скидка не может быть больше 1!');
-            //                 }
-            //             }
-            //         }
-            //         else {
-            //             alert('Скидка не может быть отрицательной.');
-            //         }
-            //     }
-            //     else {
-            //         alert('Скидка задана неверно. Необходимо задать числовое значение в долях единицы (например, 0.3) или процентах со знаком % (например, 30%)');
-            //     }
-            // }
+            'закупка': purchasingPriceRange[0] + Math.floor(Math.random() * (purchasingPriceRange[1] - purchasingPriceRange[0] + Number(1)))
         }
     }
     return productsCatalogue;
